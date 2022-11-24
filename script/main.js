@@ -1,11 +1,13 @@
-const widget = new ListWidget()
+const w = new ListWidget()
 const now = Date.now()
+const df  = DateFormatter()
 
-widget.backgroundColor = Color.lightGray()
+w.backgroundColor = Color.lightGray()
+df.useShortDateStyle()
 
-widget.addText(now.toString())
-widget.refreshAfterDate = new Date(now)
+w.addText(df.string(now))
+w.refreshAfterDate = new Date(now)
 
-Script.setWidget(widget)
+Script.setWidget(w)
 Script.complete()
 widget.presentMedium()
