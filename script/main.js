@@ -1,6 +1,6 @@
 const widget = new ListWidget();
 
-widget.backgroundColor = Color.green();
+widget.backgroundColor = Color.lightGrey();
 
 Script.setWidget(widget);
 Script.complete();
