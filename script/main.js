@@ -1,6 +1,6 @@
 const w = new ListWidget()
 const now = Date.now()
-const df  = DateFormatter()
+const df  = new DateFormatter()
 
 w.backgroundColor = Color.lightGray()
 df.useShortDateStyle()
