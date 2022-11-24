@@ -8,4 +8,4 @@ w.refreshAfterDate = new Date(now)
 
 Script.setWidget(w)
 Script.complete()
-widget.presentMedium()
+w.presentMedium()
