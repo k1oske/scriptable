@@ -8,7 +8,7 @@ w.refreshAfterDate = new Date(now)
 
 for (i = 100; i > 0; i--){
     now = Date.now()
-    console.log(now)
+    console.log(now, i)
 }
 
 Script.setWidget(w)
