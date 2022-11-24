@@ -1,7 +1,7 @@
-const widget = new Listwidget()
+const widget = new ListWidget();
 
-widget.backgroundColor = Coolor.red();
+widget.backgroundColor = Color.red();
 
-Script.setwidget(widget);
+Script.setWidget(widget);
 Script.complete();
-widget.presentMedium()
+widget.presentSmall();
