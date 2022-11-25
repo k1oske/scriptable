@@ -1,6 +1,6 @@
 const w = new ListWidget()
 const df = new DateFormatter()
-var date = new Date
+var date = new Date()
 
 w.backgroundColor = Color.lightGray()
 
