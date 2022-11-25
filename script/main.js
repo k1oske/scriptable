@@ -9,7 +9,7 @@ w.addText("minutes: " + date)
 w.refreshAfterDate = new Date(date)
 
 for (i = 100; i > 0; i--){
-    date = Date.getMinutes()
+    date = df.string(date)
     console.log("minutes: " + date)
 }
 
