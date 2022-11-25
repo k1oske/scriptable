@@ -4,7 +4,7 @@ var date = new Date
 w.backgroundColor = Color.lightGray()
 
 date = Date.getMinutes
-w.addText("minutes: " + date.toString())
+w.addText("minutes: " + date)
 w.refreshAfterDate = new Date(date)
 
 for (i = 100; i > 0; i--){
