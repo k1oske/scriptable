@@ -1,9 +1,10 @@
 const w = new ListWidget()
+const df = new DateFormatter()
 var date = new Date
 
 w.backgroundColor = Color.lightGray()
 
-date = date.getMinutes()
+date = df.string(date)
 w.addText("minutes: " + date)
 w.refreshAfterDate = new Date(date)
 
