@@ -8,10 +8,7 @@ date = df.date(date.toDateString())
 w.addText("minutes: " + date)
 w.refreshAfterDate = new Date(date)
 
-for (i = 100; i > 0; i--){
-    date = df.date(date.toDateString())
-    console.log("minutes: " + date)
-}
+console.log(date)
 
 Script.setWidget(w)
 Script.complete()
