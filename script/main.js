@@ -4,6 +4,7 @@ var date = new Date()
 
 w.backgroundColor = Color.lightGray()
 console.log(date)
+
 date = df.date(date.toDateString())
 w.addText("minutes: " + date)
 w.refreshAfterDate = new Date(date)
