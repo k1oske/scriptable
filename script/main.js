@@ -3,7 +3,7 @@ var date = new Date
 
 w.backgroundColor = Color.lightGray()
 
-w.addText(date.toString())
+w.addText("minutes: " + date.toString())
 w.refreshAfterDate = new Date(date)
 
 for (i = 100; i > 0; i--){
