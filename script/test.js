@@ -1,11 +1,15 @@
-var fs = require("fs")
-var config = fs.readFileSync("config.json")
+var fs = require('fs');
+var jsonfile = fs.readFileSync("config.json")
+var obj = JSON.parse(jsonfile)
+console.log(obj.user[0])
 
-var obj = JSON.parse(config)
-console.log("object: " + obj.vier)
+var data = { // Objekt erstellem
+  user: [] // leer
+};
+data.user.push({name: "Lukas", password: "luki"}) // döten hinzufüügenn
 
-const date = new Date
-var mins
-
-mins = date.getMinutes()
-console.log(mins)
+fs.writeFile ("config.json", JSON.stringify(data), err => {
+  if (err) throw err; // wenn error passiert, nichts tun. console.log(err) auch gut
+  console.log('complete'); 
+  }
+);
