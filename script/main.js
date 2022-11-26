@@ -4,7 +4,7 @@ const df = new DateFormatter()
 var date = new Date()
 var mins = date.getMinutes()
 
-w.addText("minutes: " + date)
+w.addText("minutes: " + mins)
 w.backgroundColor = Color.lightGray()
 
 console.log(mins)
