@@ -1,17 +1,16 @@
 const w = new ListWidget()
 const df = new DateFormatter()
+
 var date = new Date()
-var mins
+var mins = date.getMinutes()
 
-w.backgroundColor = Color.lightGray()
-console.log(date.toDateString)
-
-mins = date.getMinutes()
 w.addText("minutes: " + date)
-w.refreshAfterDate = new Date(date)
+w.backgroundColor = Color.lightGray()
 
+console.log(mins)
 console.log(date)
 
+w.refreshAfterDate = new Date(date)
+w.presentMedium()
 Script.setWidget(w)
 Script.complete()
-w.presentMedium()
