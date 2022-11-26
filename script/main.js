@@ -1,6 +1,4 @@
 const w = new ListWidget()
-const df = new DateFormatter()
-
 var date = new Date()
 var mins = date.getMinutes()
 
