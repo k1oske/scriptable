@@ -15,7 +15,7 @@ function rcolor() {
     return clist[Math.floor(Math.random() * 14)]
 }
 
-if(fm.FileExists(ipath)){
+if(fm.fileExists(ipath)){
     fcont = fm.readString(ipath)
     fm.writeString(ipath, mins.toString())
 }
