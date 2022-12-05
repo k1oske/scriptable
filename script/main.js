@@ -7,6 +7,14 @@ var mins = date.getMinutes()
 var hours = date.getHours()
 var fcont
 
+function rcolor() {
+    const clist = [Color.black() ,Color.blue(), Color.brown(),
+        Color.clear(), Color.cyan(), Color.darkGray(), Color.gray(),
+        Color.green(), Color.lightGray(), Color.magenta(), Color.orange(),
+        Color.purple(), Color.red(), Color.yellow()]
+    return clist[Math.floor(Math.random() * 14)]
+}
+
 if(fm.FileExists(ipath)){
     fcont = fm.readString(ipath)
     fm.writeString(ipath, mins.toString())
@@ -17,7 +25,7 @@ fcont = mins - fcont
 
 w.addText("minutes: " + mins)
 w.addText("last refresh: " + fcont + " minutes ago")
-w.backgroundColor = Color.lightGray()
+w.backgroundColor = rcolor()
 
 w.refreshAfterDate = new Date(date)
 w.presentMedium()
